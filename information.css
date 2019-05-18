@@ -1,0 +1,131 @@
+html{
+	overflow: hidden;
+}
+.navigation{
+	position: absolute;
+	width: 100%;
+	height: 9vh;
+	background-color: #1962DD;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+.mainBody{
+	width: 100%;
+	height: 88vh;
+	position: relative;
+	top: 10vh;
+	display: inline-block;
+}
+.information{
+	position: relative;
+	width: 40%;
+	height: 90%;
+	border: 0.5px solid #798ceb;
+	box-shadow: 2px 2.5px #888888;
+	left: 8%;
+	top: 5%;
+	border-radius: 10px;
+	color: #FFFFFF;
+	background-color: #1962DD;
+}
+.information1{
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	font-size: 30px;
+	text-align: center;
+	top:38%;
+}
+.options{
+	justify-content: center;
+	width: 100%;
+	height: 38vh;
+	overflow: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.option{
+	position: relative;
+	height: 180px;
+	width: 140px;
+}
+.images{
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	text-align: center;
+	float: left;
+	margin-top: 20%;
+	border-radius:8px;
+	box-shadow: 2px 2px #888888;
+	overflow: hidden;
+	margin-left: 15px;
+}
+.img2{
+	background-color: #1962DD;
+	width: 110px;
+	float: left;
+	height: 110px;
+}
+.description{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	top: 160px;
+}
+.Selection{
+	color: #1962DD;
+	position: absolute;
+	width: 40%;
+	border:0.5px solid #7986eb;
+	box-shadow: 2px 2.5px #888888;
+	height: 90%;
+	float: left;
+	left: 50%;
+	top: 5%;
+	border-radius: 10px;
+	text-align: center;
+}
+.button{
+	background-color: #1962DD;
+	border-radius: 5px;
+	color: #FFFFFF;
+	width: 35%;
+	margin: auto;
+	height: 5.3vh;
+}
+.mobileInformation{
+	display: none;
+	text-align: center;
+}
+.mobileButton{
+	color: #FFFFFF;
+	background-color: #1962DD;
+	margin: 6.5vh auto;
+}
+@media screen and (max-width: 800px){
+	.information{
+		display: none;
+	}
+	.mobileInformation{
+		display: block;
+	}
+	.Selection{
+		width: 90%;
+		height: 70vh;
+		margin-left:5% ;
+		left:auto;
+		background-color:  #e4e8eb;
+		border:none;
+		box-shadow: none;
+	}
+	.option,.images{
+		width: 90px;
+		margin: 12% 5px;
+		height: 90px;
+	}
+	.description{
+		top:110px;
+	}
+}
