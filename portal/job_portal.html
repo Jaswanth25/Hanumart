@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>profile_page</title>
+	<link rel="stylesheet" href="./style_job_portal.css" type="text/css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+	<script src="./angularjs.min.js"></script>
+</head>
+<body>
+	<div class="outer_main_body">
+		<div class="main_body">
+			<div class="upper_part">
+				
+			</div>
+			<div class="lower_part">
+				<div class="leftside_part">
+					<div class="profile_part">
+						<div class="profile_photo_div">
+							<div class="profile_photo">
+								
+							</div>
+						</div>
+						<div class="profile_details">
+							<div class="profile_name">
+									<span>Name</span>
+							</div>
+							<div class="profile_description">
+								<div class="profile_description_content profile_age">
+									<span>Age:</span>
+								</div>
+								<div class="profile_description_content profile_age">
+									<span>Skill:</span>
+								</div>
+								<div class="profile_description_content profile_age">
+									<span>Address:</span>
+								</div>
+								<div class="profile_description_content profile_age">
+									<span>Phone No:</span>
+								</div>
+								<div class="profile_description_content profile_age">
+									<span>Verified:</span>
+								</div>
+							</div>
+							<div class="profile_edit_div">
+								<div class="profile_edit_btn">
+									<span>Edit Details</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rightside_part">
+					<div class="filter_portion" ng-app="myApp" ng-controller="myController">
+						<div class="filter_button" ng-click=btnfunction()>
+							<span>Filter</span>
+						</div>
+						<div class="filter_button_options" ng-show = valofbtn>
+							<div class="option_location search_option" ng-click=locationFunction()>
+								<span>Location</span>
+							</div>
+							<div class="option_salary search_option">
+								<span>Salary</span>
+							</div>
+							<div class="option_skill search_option">
+								<span>Skill</span>
+							</div>
+							<div class="option_company search_option">
+								<span>Company</span>
+							</div>
+						</div>
+						<div class="location_sorting_div" ng-show =locationbtn></div>
+					</div>
+
+					<div class="portal_portion">
+						<div class="portal_middle_portion">
+							<div class="portal_middle_title">
+								<span>Job Listings</span>
+							</div>
+							<div class="portal_middle_body">
+								<div class="job_listings_portion">
+									<div class="job_listings_cart">
+										<div class="job_profile_photo">
+											
+										</div>
+										<div class="job_profile_description">
+											<div class="job_profile_options_div company_description">
+												<span>Company</span>
+											</div>
+											<div class="job_profile_options_div location_description">
+												<span>Location</span>
+											</div>
+											<div class="job_profile_options_div salary_description">
+												<span>Salary</span>
+											</div>
+											<div class="job_apply_btn">
+												<span>Apply</span>
+											</div>
+										</div>
+										<div class="job_profile_seeMore">
+											<span>See<br>More</span>
+										</div>
+									</div>
+									<div class="job_listings_cart">
+										<div class="job_profile_photo">
+											
+										</div>
+										<div class="job_profile_description">
+											<div class="job_profile_options_div company_description">
+												<span>Company</span>
+											</div>
+											<div class="job_profile_options_div location_description">
+												<span>Location</span>
+											</div>
+											<div class="job_profile_options_div salary_description">
+												<span>Salary</span>
+											</div>
+											<div class="job_apply_btn">
+												<span>Apply</span>
+											</div>
+										</div>
+										<div class="job_profile_seeMore">
+											<span>See<br>More</span>
+										</div>
+									</div>
+									<div class="job_listings_cart">
+										<div class="job_profile_photo">
+											
+										</div>
+										<div class="job_profile_description">
+											<div class="job_profile_options_div company_description">
+												<span>Company</span>
+											</div>
+											<div class="job_profile_options_div location_description">
+												<span>Location</span>
+											</div>
+											<div class="job_profile_options_div salary_description">
+												<span>Salary</span>
+											</div>
+											<div class="job_apply_btn">
+												<span>Apply</span>
+											</div>
+										</div>
+										<div class="job_profile_seeMore">
+											<span>See<br>More</span>
+										</div>
+									</div>
+									<div class="job_listings_cart">
+										<div class="job_profile_photo">
+											
+										</div>
+										<div class="job_profile_description">
+											<div class="job_profile_options_div company_description">
+												<span>Company</span>
+											</div>
+											<div class="job_profile_options_div location_description">
+												<span>Location</span>
+											</div>
+											<div class="job_profile_options_div salary_description">
+												<span>Salary</span>
+											</div>
+											<div class="job_apply_btn">
+												<span>Apply</span>
+											</div>
+										</div>
+										<div class="job_profile_seeMore">
+											<span>See<br>More</span>
+										</div>
+									</div>
+									<div class="job_listings_cart">
+										<div class="job_profile_photo">
+											
+										</div>
+										<div class="job_profile_description">
+											<div class="job_profile_options_div company_description">
+												<span>Company</span>
+											</div>
+											<div class="job_profile_options_div location_description">
+												<span>Location</span>
+											</div>
+											<div class="job_profile_options_div salary_description">
+												<span>Salary</span>
+											</div>
+											<div class="job_apply_btn">
+												<span>Apply</span>
+											</div>
+										</div>
+										<div class="job_profile_seeMore">
+											<span>See<br>More</span>
+										</div>
+									</div>
+									<div class="job_listings_cart">
+										<div class="job_profile_photo">
+											
+										</div>
+										<div class="job_profile_description">
+											<div class="job_profile_options_div company_description">
+												<span>Company</span>
+											</div>
+											<div class="job_profile_options_div location_description">
+												<span>Location</span>
+											</div>
+											<div class="job_profile_options_div salary_description">
+												<span>Salary</span>
+											</div>
+											<div class="job_apply_btn">
+												<span>Apply</span>
+											</div>
+										</div>
+										<div class="job_profile_seeMore">
+											<span>See<br>More</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portal_notification_portion">
+							<div class="portal_notification_title">
+								<span>Notifications</span>
+							</div>
+							<div class="portal_notification_body">
+								<div class="notification_listings_portion">
+									<div class="notification_listings_cart">
+										fdskh
+									</div>
+									<div class="notification_listings_cart">
+										fdskh
+									</div>
+									<div class="notification_listings_cart">
+										fdskh
+									</div>
+									<div class="notification_listings_cart">
+										fdskh
+									</div>
+									<div class="notification_listings_cart">
+										fdskh
+									</div>
+									<div class="notification_listings_cart">
+										fdskh
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('myController', function($scope) {
+		$scope.valofbtn = false;
+		$scope.locationbtn = false;
+	    $scope.btnfunction = function(){
+	    	$scope.valofbtn = !($scope.valofbtn);
+	    	$scope.locationbtn = false;
+	    }
+	    $scope.locationFunction = function(){
+	    	$scope.locationbtn = !($scope.locationbtn)
+	    }
+	});
+	</script>
+</body>
+</html>
