@@ -9,11 +9,12 @@
 }
 .signupForm{
 	text-align: center;
-	width: 65%;
+	width: 60%;
 	height: 85vh;
 	border:0.5px solid #7986eb;
 	box-shadow: 2px 2.5px #888888;
 	margin: 10vh auto 4vh;
+	border-radius: 3px;
 	color: #1962DD;
 }
 .head{
@@ -24,11 +25,26 @@
 	float: right;
 	width: 64%;
 	height: 4vh;
+	margin:2px;
+}
+.addressText{
+	float: right;
+	width: 64%;
+	height: 8vh;
 }
 .part{
 	width: 60%;
-	height: 9vh;
+	height: 7.3vh;
 	margin: auto;
+}
+.addressPart{
+	width: 60%;
+	height: 12vh;
+	margin:auto;
+}
+input{
+	border-radius: 3px;
+	border:1px solid #1962DD	;
 }
 .button{
 	background-color: #1962DD;
@@ -37,6 +53,7 @@
 	width: 25%;
 	margin: 2% auto;
 	height: 5vh;
+	line-height: 5vh;
 }
 @media screen and (max-width:800px){
 	.signupForm{
@@ -44,7 +61,7 @@
 		box-shadow: none;
 		border:none;
 	}
-	.part{
+	.part,.addressPart{
 		width: 100%;
 		margin:0px;
 	}

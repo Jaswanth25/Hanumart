@@ -94,6 +94,7 @@ html{
 	width: 35%;
 	margin: auto;
 	height: 5.3vh;
+	line-height: 5.3vh;
 }
 .mobileInformation{
 	display: none;

@@ -75,6 +75,7 @@ html{
 	width: 25%;
 	margin: 6.5% auto;
 	height: 4.5vh;
+	line-height: 4.5vh;
 }
 .mobileLoginForm{
 	display: none;

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hanumart Login</title>
+	<link rel="stylesheet" type="text/css" href="./home.css" />
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+<body>
+	<div class="navigation">
+	</div>
+	<div class="headBar">
+		<div class="logo">Hanumart</div>
+		<div class="search"><input type="text" name="item" placeholder="Search..." /></div>
+	</div>
+	<div class="introduction">Introduction</div>
+	<div class="mainContent">
+		<div class="news">
+			<div class="Head">Latest News</div>
+			<div class="fade">
+				<ul class="lists">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+			<div class="fade">
+				<ul class="lists">
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+				</ul>
+			</div>
+			<div class="fade">
+				<ul class="lists">
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+			</div>
+			<div class="dots" style="text-align:center">
+  				<span class="dot newsPage" onclick="displayNews(0)"></span> 
+  				<span class="dot newsPage" onclick="displayNews(1)"></span> 
+			 	<span class="dot newsPage" onclick="displayNews(2)"></span> 
+			</div>
+		</div>
+		<div class="notifications">
+			<div class="Head">Latest Notifications</div>
+			<div class="fade">
+				<ul class="notificationsLists">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+			<div class="fade">
+				<ul class="notificationsLists">
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+				</ul>
+			</div>
+			<div class="fade">
+				<ul class="notificationsLists">
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+			</div>
+			<div class="dots" style="text-align:center">
+  				<span class="dot notificationsPage" onclick="displayNotifications(0)"></span> 
+  				<span class="dot notificationsPage" onclick="displayNotifications(1)"></span> 
+			 	<span class="dot notificationsPage" onclick="displayNotifications(2)"></span> 
+			</div>
+		</div>
+	</div>
+	<div class="button">Login/signUp</div>	
+	<div class="bottom"></div>
+
+	<script type="text/javascript">
+		var lists=document.getElementsByClassName('lists');
+		var notificationslists=document.getElementsByClassName('notificationsLists');
+		var newsPages=document.getElementsByClassName('newsPage');
+		var notificationsPages=document.getElementsByClassName('notificationsPage');
+		function displayNews(i){
+			for(var j=0;j<lists.length;j++){
+				lists[j].style.display="none";
+				newsPages[j].style.backgroundColor="#bbb";
+			}
+			lists[i].style.display="block";
+			newsPages[i].style.backgroundColor="#888888";
+		}
+		displayNews(0);
+		function displayNotifications(i){
+			for(var j=0;j<lists.length;j++){
+				notificationslists[j].style.display="none";
+				notificationsPages	[j].style.backgroundColor="#bbb";
+			}
+			notificationslists[i].style.display="block";
+			notificationsPages	[i].style.backgroundColor="#888888";
+		}
+		displayNotifications(0);
+	</script>
+</body>
+</html>
